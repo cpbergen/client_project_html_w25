@@ -1,11 +1,23 @@
+
 body {
     font-family: Montserrat, sans-serif;
     margin: 5px;
+
+}
+
+.parallax {
+    background-image: url("/images/UMSI_Campus_Winter_ArtSculptureandUnion_01_mobile.JPG");
+    background-size: cover;
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+    backdrop-filter: grayscale(40%) blur(20px) brightness(145%);
+    background-attachment: fixed;
 }
 
 main {
     margin: 0% 5% 5% 5%;
 }
+
 
 p {
     font-size: medium;
@@ -48,6 +60,10 @@ h1 {
 margin-bottom: 1rem;
 }
 
+li {
+    margin-bottom: 1rem;
+}
+
 .skip a{
     background: white;
     left: 0;
@@ -79,6 +95,11 @@ margin-bottom: 1rem;
 
 }
 
+.top-bar li {
+  margin-bottom: 0px;
+
+}
+
 .top-bar a {
     color: white;
     text-decoration: none;
@@ -105,9 +126,13 @@ margin-bottom: 1rem;
 .resource-grid {
  display: grid;
  grid-template-columns: 50% 50%;
- grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
  column-gap: 10%;
-    row-gap: 1em;}
+    row-gap: 1em;
+ align-items: start;}
+
+.resource-grid div {
+padding-bottom: 0px; 
+}
 
 .resource-grid p {
 margin-bottom: 0px;}
@@ -184,7 +209,6 @@ list-style-type: none;
 margin-bottom: 0px;
 }
 
-
 .help-grid details:open {
     align-items: start;
 
@@ -239,4 +263,11 @@ button:hover {
 .tutoring-faqs>details>p
 { font-size: .8rem;
     overflow: auto;
+}
+
+@media (prefers-reduced-motion) {
+    .parallax {
+        background-image: none; 
+        background-color: whitesmoke;
+    }
 }
