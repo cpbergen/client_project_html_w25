@@ -28,14 +28,14 @@ p {
 
 h1 {
     display: block;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 3rem;
     margin: 1em 0em 2em 0em;
 }
 
 h2 {
     font-size: 1.75rem;
-    font-weight: 250px;
+    font-weight:250;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -208,7 +208,7 @@ list-style-type: none;
 margin-bottom: 0px;
 }
 
-.help-grid details:open {
+/* .help-grid details:open {
     align-items: start;
 
 }
@@ -220,7 +220,7 @@ margin-bottom: 0px;
 .help-grid details:open li {
     margin-top: .5em;
     margin-bottom: .5em;
-}
+} */
 
 #third-dropdown::before {
     margin-top: -50px;
